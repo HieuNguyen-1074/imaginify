@@ -25,7 +25,8 @@ export default function RootLayout({
     <ClerkProvider
       appearance={{
         variables: { colorPrimary: '#624cf5' },
-      }}>
+      }}
+      publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}>
       <html lang='en'>
         <body className={cn('font-IBMPlex antialiased', IBMPlex.variable)}>
           {children}
